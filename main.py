@@ -23,6 +23,7 @@ else:
             print(company, kind, region)
             title = anchor.find("span", class_="title")
             job_data = {
+                "link": f"http://weworkremotely.com{link}",
                 "company": company.string,
                 "region": region.string,
                 "position": title.string
